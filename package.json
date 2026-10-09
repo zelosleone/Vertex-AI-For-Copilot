@@ -1,0 +1,79 @@
+{
+  "name": "vertex-ai-for-copilot",
+  "displayName": "Vertex AI: Copilot Provider",
+  "description": "Use Gemini on Vertex AI in GitHub Copilot Chat, billed to your Google Cloud project and its credits.",
+  "version": "0.1.0",
+  "type": "module",
+  "publisher": "DenizhanDaklr",
+  "license": "MIT",
+  "icon": "images/icon.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zelosleone/Vertex-AI-For-Copilot"
+  },
+  "homepage": "https://github.com/zelosleone/Vertex-AI-For-Copilot#readme",
+  "bugs": {
+    "url": "https://github.com/zelosleone/Vertex-AI-For-Copilot/issues"
+  },
+  "engines": {
+    "vscode": "^1.118.0"
+  },
+  "categories": [
+    "AI",
+    "Chat"
+  ],
+  "keywords": [
+    "vertex ai",
+    "gemini",
+    "google cloud",
+    "agent platform",
+    "copilot"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "extensionKind": [
+    "workspace",
+    "ui"
+  ],
+  "contributes": {
+    "languageModelChatProviders": [
+      {
+        "vendor": "vertex-ai",
+        "displayName": "Vertex AI",
+        "managementCommand": "vertexAi.manage"
+      }
+    ],
+    "commands": [
+      {
+        "command": "vertexAi.manage",
+        "title": "Vertex AI: Manage"
+      },
+      {
+        "command": "vertexAi.setApiKey",
+        "title": "Vertex AI: Set API Key"
+      },
+      {
+        "command": "vertexAi.removeApiKey",
+        "title": "Vertex AI: Remove API Key"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "lint": "eslint src",
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@types/node": "20.19.30",
+    "@types/vscode": "^1.118.0",
+    "@typescript-eslint/eslint-plugin": "8.53.0",
+    "@typescript-eslint/parser": "8.53.0",
+    "@vscode/vsce": "^4.0.0",
+    "eslint": "9.39.2",
+    "typescript": "5.9.3"
+  }
+}

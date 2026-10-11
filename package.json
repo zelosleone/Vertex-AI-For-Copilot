@@ -2,7 +2,7 @@
   "name": "vertex-ai-for-copilot",
   "displayName": "Vertex AI: Copilot Provider",
   "description": "Use Gemini on Vertex AI in GitHub Copilot Chat, billed to your Google Cloud project and its credits.",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "publisher": "DenizhanDaklr",
   "license": "MIT",

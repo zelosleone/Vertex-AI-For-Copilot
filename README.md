@@ -2,7 +2,7 @@
 
 Use Gemini on Vertex AI in GitHub Copilot Chat. Usage is billed to your Google Cloud project, so Google Cloud credits (such as the Google Developer Program monthly credits) pay for it. AI Studio keys can't spend those credits; Vertex AI keys can.
 
-> Also from the same developer: [Lodestar](https://marketplace.visualstudio.com/items?itemName=DenizhanDaklr.lodestar) walks you through how code works and reviews your changes, on any model in VS Code, including this extension's. $10, one time.
+> Also from the same developer: [Lodestar](https://marketplace.visualstudio.com/items?itemName=DenizhanDaklr.lodestar) walks you through how code works, explains anything you hover, and reviews your changes on any model in VS Code, including this extension's. 3 free runs included, then $5 one-time.
 
 1. In the Google Cloud console, enable the Vertex AI (Agent Platform) API and create an API key bound to a service account with the Vertex AI User role.
 2. Run **Vertex AI: Set API Key** and paste it. No project ID or region needed.
